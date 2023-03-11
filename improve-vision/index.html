@@ -38,7 +38,25 @@
     <link href="https://theactergroated.com/d/.js?noscript=true&lpurl=" rel="stylesheet" />
   </noscript>
 
-
+  <!-- Taboola Pixel Code -->
+  <script type='text/javascript'>
+    window._tfa = window._tfa || [];
+    window._tfa.push({ notify: 'event', name: 'page_view', id: 1479579 });
+    !function (t, f, a, x) {
+      if (!document.getElementById(x)) {
+        t.async = 1; t.src = a; t.id = x; f.parentNode.insertBefore(t, f);
+      }
+    }(document.createElement('script'),
+      document.getElementsByTagName('script')[0],
+      '//cdn.taboola.com/libtrc/unip/1479579/tfa.js',
+      'tb_tfa_script');
+  </script>
+  <script>
+    function sendTaboolaPixel() {
+      _tfa.push({ notify: 'event', name: 'cta_click', id: 1479579 });
+    }
+  </script>
+  <!-- End of Taboola Pixel Code -->
 
 </head>
 
@@ -85,7 +103,7 @@
 
 
         <div class="mx-auto ">
-          <a href="https://theactergroated.com/click"> <img class="w-full "
+          <a onclick="sendTaboolaPixel()" href="https://theactergroated.com/click"> <img class="w-full "
               src="/improve-vision/public/img/vision3.png" />
           </a>
         </div>
@@ -113,9 +131,10 @@
         <div class="mb-10 bg-white rounded-lg ">
           <div
             class="max-w-screen-md px-3 py-1 pb-2 mx-1 text-base font-normal leading-relaxed text-gray-900 bg-white sm:font-light sm:text-lg sm:px-0 ">
-            <a href="https://theactergroated.com/click" class="italic font-bold text-blue-700 underline"></a>
-            <p class="mt-2 mb-2 font-semibold ">TL;DR: <a href="https://theactergroated.com/click"
-                class="text-blue-600 underline">Go Directly To Video >></a></p>
+            <a onclick="sendTaboolaPixel()" href="https://theactergroated.com/click"
+              class="italic font-bold text-blue-700 underline"></a>
+            <p class="mt-2 mb-2 font-semibold ">TL;DR: <a onclick="sendTaboolaPixel()"
+                href="https://theactergroated.com/click" class="text-blue-600 underline">Go Directly To Video >></a></p>
 
 
             <p>Do you feel like you're the only one suffering from <a class="font-bold"> peripheral vision loss
@@ -144,7 +163,8 @@
       </div>
     </div>
     <div class="px-6 mb-2 sm:mx-40">
-      <a class="flex justify-center max-w-screen-md py-4 mx-auto text-2xl font-semibold text-white bg-blue-500 rounded-full shadow-xl sm:text-xl"
+      <a onclick="sendTaboolaPixel()"
+        class="flex justify-center max-w-screen-md py-4 mx-auto text-2xl font-semibold text-white bg-blue-500 rounded-full shadow-xl sm:text-xl"
         href="https://theactergroated.com/click">Click Here To Watch</a>
     </div>
 
